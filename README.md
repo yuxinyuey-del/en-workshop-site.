@@ -4,14 +4,11 @@
 
 フロントエンドは React、Vite、Tailwind CSS で構築され、Figma Make から公開されます。予約、決済、メール通知、空き枠管理は Supabase Edge Function `hyper-function` が担当します。
 
-## 現在の重要事項
+## 現在の稼働状況
 
-> [!IMPORTANT]
-> フロントエンドと管理画面は実装済みですが、Supabase 上で稼働中の `hyper-function` は旧バージョンです。最新の関数コードを Supabase Dashboard の Edge Functions > `hyper-function` > Code に反映し、**Deploy updates** を実行してください。
->
-> デプロイが完了するまでは `/admin` で `Failed to fetch` が表示され、予約停止枠の取得・更新などを利用できません。特に CORS で `X-Admin-Password` ヘッダーと `PATCH` メソッドを許可する必要があります。
+フロントエンド、管理画面、Supabase Edge Function `hyper-function` はデプロイ済みです。管理画面から予約情報と受付停止枠を取得・更新できます。
 
-なお、リポジトリ内の `supabase/functions/server/index.tsx` は Figma Make が生成した最小構成のサーバーで、現在は health check のみを実装しています。Square 予約を処理する本番用 `hyper-function` と同一ではありません。
+なお、リポジトリ内の `supabase/functions/server/index.tsx` は Figma Make が生成した最小構成のサーバーで、health check のみを実装しています。Square 予約を処理する本番用 `hyper-function` と同一ではありません。
 
 ## 主な機能
 
