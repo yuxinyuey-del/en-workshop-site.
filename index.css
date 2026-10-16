@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..800;1,6..72,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500&display=swap');
+
+@import 'tailwindcss';
+
+@theme {
+  --color-paper: #F6F3ED;
+  --color-paper-alt: #EDE8DE;
+  --color-ink: #23211C;
+  --color-ink-soft: #5C574E;
+  --color-green-deep: #22402F;
+  --color-green-pale: #C7D4C0;
+  --color-wood: #A9743F;
+  --color-line: #DDD6C9;
+
+  --font-serif: 'Newsreader', Georgia, serif;
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-zh-serif: 'Noto Serif TC', Georgia, serif;
+  --font-zh-sans: 'Noto Sans TC', system-ui, sans-serif;
+  --font-mincho: 'Shippori Mincho', 'Noto Serif JP', Georgia, serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #F6F3ED;
+  color: #23211C;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 17px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button {
+  font-family: inherit;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  scrollbar-width: none;
+  box-sizing: border-box;
+}
+
+@media (max-width: 767px) {
+  body {
+    padding-bottom: 80px;
+  }
+}
